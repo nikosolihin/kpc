@@ -1,0 +1,70 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./htdocs/wp-content/themes/kpc"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "browser": "google chrome canary",
+      "proxy": "kpc.dev"
+    },
+
+    "static": {
+      "src": "static",
+      "dest": "./"
+    },
+
+    "js": {
+      "src": "js",
+      "dest": "js",
+      "extractSharedJs": true,
+      "entries": {
+        "app": ["./app.js"]
+      },
+      "extensions": ["js"]
+    },
+
+    "css": {
+      "src": "scss",
+      "dest": "./",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "twig": {
+      "src": "twig",
+      "dest": "templates",
+      "extensions": ["twig"]
+    },
+
+    "php": {
+      "src": "php",
+      "dest": "./",
+      "extensions": ["php"]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "images",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "fonts": {
+      "src": "fonts",
+      "dest": "fonts",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+    },
+
+    "svgSprite": {
+      "src": "sprites",
+      "dest": "images",
+      "extensions": ["svg"]
+    }
+  }
+}

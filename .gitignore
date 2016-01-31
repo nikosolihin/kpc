@@ -5,9 +5,4 @@ node_modules/
 vvv-hosts
 vvv-init.sh
 wp-cli.yml
-
-# Ignore everything in htdocs
 htdocs/
-
-# Except these
-!htdocs/wp-content/themes/kpc/
