@@ -6,3 +6,5 @@ vvv-hosts
 vvv-init.sh
 wp-cli.yml
 htdocs/
+htdocs/*
+bower_components/
